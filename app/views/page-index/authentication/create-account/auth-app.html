@@ -28,6 +28,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+
     
         <h1 class="govuk-heading-l govuk-!-margin-top-0 govuk-!-margin-bottom-3">Set up an authenticator app</h1>
       
@@ -75,7 +76,6 @@
         <p class="govuk-body">3. The authenticator app will show a security code.</p>
         <p class="govuk-body">4. Enter the security code.</p>
       
-        <form id="form-tracking" method="post" novalidate="novalidate">
       
           <input type="hidden" name="_csrf" value="JSQCnzIk-24YOLekoVsgeGRj75LpM08IW08k">
           <input type="hidden" name="_secretKey" value="UZ5TR7MNHXQD5NSLHVIGHNW4D47ROYGBS3CMBCDCCR4MWMPWGXBA">
@@ -104,35 +104,21 @@
           
         
       
-      <button type="Submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
-        Continue
-      </button>
+      <form class="form" method="post">
+        <button value="create" name="optionSelected" class="govuk-button govuk-!-margin-right-3" data-module="govuk-button" id="create-account-link" formaction="/page-index/ipv-core/signed-in">
+          Continue
+        </button>
       
       
           <p class="govuk-body">
             <a href="#" class="govuk-link" rel="noreferrer">Get a code another way</a>
           </p>
-      
         </form>
-      
-      
                   </div>
 
 
 
 
-
-
-
-
-      <form class="form" action="/url/of/next/page" method="post">
-
-
-       
-  
-        </form>
-
-      </form>
 
     </div>
   </div>
