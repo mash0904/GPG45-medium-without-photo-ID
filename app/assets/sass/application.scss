@@ -1,0 +1,253 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+// 
+
+// Add extra styles here
+
+/* Index page *//////////////////////////////////////////////////////////////////////////////
+/* Style for thumbnail images */
+
+.page-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1400px; /* adjust as needed */
+  }
+  
+  .page-index__stage {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .page-index__stage-header {
+    background-color: #F2F2F2;
+    padding: 5px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .page-index__pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* changed to flex-start */
+    align-items: center; /* added */
+    min-height: 210px; /* set the min-height to the same height as the iframe */
+  }
+  
+  .page-index__page {
+    width: calc(20% - 10px); /* adjust the width to fit 5 iframes per row */
+    margin-bottom: 15px;
+    text-align: left;
+    height: 210px; /* set the height to the same height as the iframe */
+  }
+  
+  .page-index__page iframe {
+    width: 400px;
+    height: 400px;
+    border: none;
+    transform: scale(0.4);
+    transform-origin: top left;
+    border: 5px solid #b1b4b6;
+    margin-top: 12px;
+  }
+
+  .page-index__page:hover iframe {
+    transform-origin: 0 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+  
+  
+  .thumbnail:hover {
+    cursor: pointer;
+  }
+  
+  .thumbnail:hover iframe {
+    transform: scale(0.5);
+    transform-origin: 0 0;
+  }
+
+  .page-index__page:hover {
+    z-index: 2;
+  }
+  
+  .page-index__stage:hover {
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .page-index__page {
+      width: calc(25% - 10px); /* adjust the width to fit 4 iframes per row */
+    }
+  }
+  
+  @media screen and (max-width: 1060px) {
+    .page-index__page {
+      width: calc(33.33% - 10px); /* adjust the width to fit 3 iframes per row */
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .page-index__page {
+      width: calc(50% - 10px); /* adjust the width to fit 2 iframes per row */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .page-index__page {
+      width: 100%; /* adjust the width to fit 1 iframe per row */
+    }
+  }
+  
+  .govspeak .address, .govspeak .contact, .gem-c-govspeak .address, .gem-c-govspeak .contact {
+    border-left: 1px solid #b1b4b6;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+//// password toggle//////////////////////////////////////////////////////////////////////////////////////
+
+.govuk-show-password__input-wrapper {
+    display: table;
+    display: flex;
+    width: 100%;
+    flex-direction: column
+}
+
+@media(min-width: 20em) {
+    .govuk-show-password__input-wrapper {
+        flex-direction:row
+    }
+}
+
+.govuk-show-password__input-wrapper .govuk-input--with-password {
+    display: table-cell
+}
+
+.govuk-show-password__input-wrapper .govuk-input--with-password:focus {
+    z-index: 1
+}
+
+.govuk-show-password__input-wrapper .govuk-input--with-password::-ms-reveal {
+    display: none
+}
+
+.govuk-show-password__toggle {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    z-index: 0;
+    display: table-cell;
+    padding: 5px 15px;
+    min-width: 5.5em;
+    color: #1d70b8;
+    text-decoration: underline;
+    background: #fff;
+    border: solid 2px #0b0c0c;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+@media print {
+    .govuk-show-password__toggle {
+        font-family: sans-serif
+    }
+}
+
+@media(min-width: 40.0625em) {
+    .govuk-show-password__toggle {
+        font-size:19px;
+        font-size: 1.1875rem;
+        line-height: 1.3157894737
+    }
+}
+
+@media print {
+    .govuk-show-password__toggle {
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
+@media(max-width: 19.99em) {
+    .govuk-show-password__toggle {
+        padding:5px;
+        width: 100%;
+        margin-top: -2px;
+        white-space: normal
+    }
+}
+
+@media(min-width: 20em) {
+    .govuk-show-password__toggle {
+        margin-left:-2px;
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+
+.govuk-show-password__toggle:hover {
+    color: #003078
+}
+
+.govuk-show-password__toggle:focus {
+    z-index: 1;
+    background: #fd0;
+    color: #0b0c0c;
+    outline: 0
+}
+
+.govuk-show-password__toggle:active {
+    z-index: 1;
+    background: #fff;
+    border-color: #fd0;
+    color: #0b0c0c
+}
+
+/////////Enter phone number disabled input colour////////////
+.govuk-input--disabled {
+    background-color: #f3f2f1;
+}
+
+/////////interrupt component/////////////////////////////////////////////////////////////////////////////
+
+
+.white-text {
+    color: #fff
+}
+
+.blue-background {
+    background-color: #1d70b8
+}
+
+#gov-uk-logo {
+    border: 2px solid #fff;
+    border-radius: 13px
+}
+
+.app-button--inverted .govuk-button {
+    background-color: #fff;
+    color: #245ea0
+}
+
+.app-button--inverted:active .govuk-button {
+    color: #0b0c0c;
+    background-color: #fd0
+}
+
+.app-button--inverted:focus .govuk-button {
+    border-color: #fd0;
+    color: #1d70b8;
+    background-color: #e8f1f8;
+    -webkit-box-shadow: inset 0 0 0 2px #fd0;
+    box-shadow: inset 0 0 0 2px #fd0
+}
+
