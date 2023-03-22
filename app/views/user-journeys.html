@@ -1,0 +1,215 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+ GOV.UK One Login Page Index
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-width-container"></div>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Exploratory
+    </strong>
+    <span class="govuk-phase-banner__text">
+      These are early concepts, tell us what you think
+    </span>
+  </p>
+</div>
+<a href="/" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">GOV.UK One Login</span>
+      <h1 class="govuk-heading-xl">User journeys</h1>
+
+     </div>  
+    </div>   
+    
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        {{govukTag({
+          text: "Work in progress",
+          classes: "govuk-tag--yellow"
+        })}}
+        <h2 class="govuk-heading-l">Happy paths</h2>
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    
+   
+    
+
+    <span class="govuk-caption-m">Scenario 1</span>
+          <h3 class="govuk-heading-m">Proving identity with security questions</h3>
+          <p> John needs to apply for a basic DBS check. He signs into GOV.UK One Login, uses an authentication app for 2FA, and proves his identity by entering his UK passport details and answering security questions.
+          </p>
+    
+          {{ govukButton({
+            text: "Launch",
+            href: "/page-index/govuk/dbs-start-page",
+            isStartButton: true
+          }) }}
+    
+        </div>
+      </div>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          View user journey
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <div class="journey">
+          <div class="journey-stage">
+            <div class="journey-stage-title">
+              <h3 class="govuk-heading-s">Proving identity with security questions</h3>
+              <div class="journey-link">
+                <a href="/page-index/govuk/dbs-start-page">View full journey</a>
+              </div>
+            </div>
+          </div>
+          <div class="journey-pages">
+            <div class="journey-page">
+              <a href="/page-index/govuk/dbs-start-page" target="_blank">DBS start page</a>
+              <iframe src="/page-index/govuk/dbs-start-page" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/dbs/agree-to-terms" target="_blank">Agree to terms</a>
+              <iframe src="/page-index/dbs/agree-to-terms" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/dbs/prove-your-identity" target="_blank">Prove your identity</a>
+              <iframe src="/page-index/dbs/prove-your-identity" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/pre-auth/identity-welcome" target="_blank">Identity welcome</a>
+              <iframe src="/page-index/pre-auth/identity-welcome" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/pre-auth/id-screener" target="_blank">ID screener</a>
+              <iframe src="/page-index/pre-auth/id-screener" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/authentication/create-account" target="_blank">Sign in</a>
+              <iframe src="/page-index/authentication/create-account" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/authentication/sign-in/enter-email" target="_blank">Enter email</a>
+              <iframe src="/page-index/authentication/sign-in/enter-email" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/authentication/sign-in/create-password" target="_blank">Enter password</a>
+              <iframe src="/page-index/authentication/sign-in/create-password" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/authentication/sign-in/enter-app-code" target="_blank">Enter app code</a>
+              <iframe src="/page-index/authentication/sign-in/enter-app-code" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/ipv-core/signed-in" target="_blank">Signed in</a>
+              <iframe src="/page-index/ipv-core/signed-in" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/app-cri/computer-or-tablet" target="_blank">Computer or tablet</a>
+              <iframe src="/page-index/app-cri/computer-or-tablet" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/app-cri/have-a-smartphone" target="_blank">Have a smartphone</a>
+              <iframe src="/page-index/app-cri/have-a-smartphone" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/app-cri/ineligible" target="_blank">Ineligible</a>
+              <iframe src="/page-index/app-cri/ineligible" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/ipv-core/security-questions-intro" target="_blank">Passport and KBV</a>
+              <iframe src="/page-index/ipv-core/security-questions-intro" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/ipv-core/enter-passport-details" target="_blank">Passport details</a>
+              <iframe src="/page-index/ipv-core/enter-passport-details" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/address-cri/address-intro" target="_blank">Address intro</a>
+              <iframe src="/page-index/address-cri/address-intro" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/address-cri/find-current-address" target="_blank">Find address</a>
+              <iframe src="/page-index/address-cri/find-current-address" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/address-cri/choose-current-address" target="_blank">Choose address</a>
+              <iframe src="/page-index/address-cri/choose-current-address" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/address-cri/check-current-address" target="_blank">Check address</a>
+              <iframe src="/page-index/address-cri/check-current-address" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/address-cri/started-living-here" target="_blank">Start date</a>
+              <iframe src="/page-index/address-cri/started-living-here" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/address-cri/confirm-addresses" target="_blank">Confirm address</a>
+              <iframe src="/page-index/address-cri/confirm-addresses" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/fraud-cri/fraud-check" target="_blank">Fraud check</a>
+              <iframe src="/page-index/fraud-cri/fraud-check" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/kbv-cri/kbv-start" target="_blank">KBV start</a>
+              <iframe src="/page-index/kbv-cri/kbv-start" allowtransparency="true"></iframe>
+            </div>
+            <div class="journey-page">
+              <a href="/page-index/kbv-cri/mortgage-balance" target="_blank">Mtg Balance</a>
+              <iframe src="/page-index/kbv-cri/mortgage-balance" allowtransparency="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+    
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+         Design notes
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+          <li>Need to consider performance. With current design, if I include more iframes it struggles. Need to adapt and reduce either size of iframes or system load.</li>
+          <li>Consider alternative approaches to 'horizontal scroll' component.</li>
+          <li>To ensure optimal accessibility and usability, we need to consider factors such as responsiveness, keyboard navigation, as well as the use of appropriate affordances and signifiers to guide users through the scroll component.</li>
+          <li>Should we use arrows or something similar to indicate flow.</li>
+          <li>Need to consider appropriate categorisation of flows through service aligned to audience and their needs i.e. product teams, relying parties or senior stakeholders.</li>
+        </ul>
+      </div>
+    </details>          
+    </div>
+  </div>
+   
+
+{% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer " role="contentinfo"></footer>
+{% endblock %}
