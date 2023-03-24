@@ -1,0 +1,129 @@
+
+/* User Journey */////////////////////////////////////////////////
+
+/* Styling for the container of the user journey */
+.journey {
+  border-top: 1px solid #bfc1c3;
+  border-bottom: 1px solid #bfc1c3;
+  border-left: none;
+  border-right: 1px solid #bfc1c3;
+  border-radius: 5px;
+  margin: 40px 0;
+  overflow: hidden;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+/* Styling for the container of the journey pages */
+.journey-pages {
+  display: flex; /* display the journey pages side by side */
+  flex-wrap: nowrap; /* don't wrap the journey pages */
+  overflow-x: auto; /* allow horizontal scrolling */
+  overflow-y: hidden; /* hide vertical scrolling */
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+/* Styling for each individual journey page */
+.journey-page {
+  width: 160px; /* set a fixed width for each journey page */
+  margin-right: 25px; /* add margin to the right of each journey page */
+  margin-bottom: 20px;
+  text-align: left;
+  height: 210px; /* set the height to the same height as the iframe */
+  position: relative;
+  padding-right: 10px; /* add padding to the right of each journey page */
+}
+
+/* Styling for the iframe within each journey page */
+.journey-page iframe {
+  width: 400px;
+  height: 400px;
+  border: none;
+  transform: scale(0.4);
+  transform-origin: top left;
+  border: 5px solid #b1b4b6;
+  margin-top: 12px;
+  min-width: 400px; /* set a minimum width for the iframe */
+  min-height: 400px; /* set a minimum height for the iframe */
+}
+
+
+/* Styling for the iframe within each journey page on hover */
+.journey-page:hover iframe {
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+/* Styling for each journey page on hover */
+.journey-page:hover {
+  z-index: 2;
+}
+
+/* Styling for the journey stage */
+.journey-stage {
+  margin-bottom: 35px;
+}
+
+/* Styling for the title of each journey stage */
+.journey-stage-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the heading within each journey stage title */
+.journey-stage-title h3 {
+  margin: 0;
+}
+
+/* Styling for the link within each journey stage title */
+.journey-link {
+  margin-left: auto;
+}
+
+/* Styling for the scroll bar track */
+.journey-pages::-webkit-scrollbar {
+  height: 10px; /* Set the height of the scrollbar to 10px */
+}
+
+/* Styling for the scroll bar thumb */
+.journey-pages::-webkit-scrollbar-thumb {
+  background-color: #bfc1c3; /* Set the background color of the scrollbar thumb */
+  border-radius: 10px; /* Round the corners of the scrollbar thumb */
+}
+
+/* Styling for the scroll bar track area */
+.journey-pages::-webkit-scrollbar-track {
+  background-color: #f2f2f2; /* Set the background color of the scrollbar track */
+  border-radius: 10px; /* Round the corners of the scrollbar track */
+}
+
+/* Styling for the corner of the scroll bar */
+.journey-pages::-webkit-scrollbar-corner {
+  background-color: #f2f2f2; /* Set the background color of the scrollbar corner */
+}
+
+
+/* Media queries for different screen sizes */
+
+@media screen and (max-width: 959px) {
+  .journey-page {
+    width: calc(33.33% - 10px); /* reduce the width of each journey page to fit 3 per row */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .journey-page {
+    width: calc(50% - 10px); /* reduce the width of each journey page to fit 2 per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .journey-page {
+    width: 100%; /* make each journey page take up the full width of the container */
+    margin-right: 0; /* remove the margin on the right side of each journey page */
+  }
+}
