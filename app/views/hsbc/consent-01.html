@@ -1,0 +1,81 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block header %}
+
+<header class="hsbc-header" role="banner">
+  <div class="hsbc-header__container">
+
+    <!-- HSBC logo placeholder -->
+    <div class="hsbc-header__logo">
+      <a href="#" class="hsbc-header__link">
+        <span class="hsbc-header__logotype">
+          <!-- Replace this with your HSBC logo image or SVG -->
+          <img src="/public/images/hsbc-logo.svg" alt="HSBC Logo" class="hsbc-logo">
+        </span>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+<body class="hsbc-page">
+
+  <h1 class="hsbc-h1">You're connecting to HSBC</h1>
+
+  <p class="hsbc-body govuk-!-margin-bottom-6">Please select personal or business banking.</p>
+
+  <button class="hsbc-button hsbc-button--special" data-module="hsbc-button" onclick="window.location.href = '/hsbc/consent-02.html';">
+    Personal
+</button>
+
+
+<button class="hsbc-button hsbc-button--special" data-module="hsbc-button"onclick="window.location.href = '/hsbc/consent-02.html';">
+    Business
+</button>
+
+<button class="hsbc-button-white" data-module="hsbc-button" style="display: block;">
+    Cancel
+</button>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break">
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break">
+
+  
+  
+
+
+</body>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+
+<footer class="hsbc-footer">
+  <div class="hsbc-footer__container">
+    <nav class="hsbc-footer__navigation" aria-label="Footer">
+      <ul class="hsbc-footer__list">
+    </nav>
+  </div>
+</footer>
+
+
+{% endblock %}
+

@@ -1,0 +1,145 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header class="hsbc-header" role="banner">
+  <div class="hsbc-header__container">
+
+    <!-- HSBC logo placeholder -->
+    <div class="hsbc-header__logo">
+      <a href="#" class="hsbc-header__link">
+        <span class="hsbc-header__logotype">
+          <!-- Replace this with your HSBC logo image or SVG -->
+          <img src="/public/images/hsbc-logo.svg" alt="HSBC Logo" class="hsbc-logo">
+        </span>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+<body class="hsbc-page">
+
+  <h1 class="hsbc-h1">Open Banking information sharing</h1>
+
+  <div class="hsbc-inset">
+    <div class="hsbc-inset__line"></div>
+    <h2 class="hsbc-h2">Select accounts</h2>
+  </div>
+
+  <p class="hsbc-body">Select which current accounts you want to share information from</p>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+  
+
+  <label for="current-account" class="hsbc-account">
+    <input type="checkbox" id="current-account" class="hsbc-account__checkbox">
+    <div class="hsbc-account__details">
+      <p class="hsbc-account__name">Current Account 1</p>
+      <p class="hsbc-account__number">Account Number: 12345678</p>
+      <p class="hsbc-account__sort-code">Sort Code: 12-34-56</p>
+    </div>
+    <div class="hsbc-account__balance">
+      <p class="hsbc-account__balance-label">Balance:</p>
+      <p class="hsbc-account__balance-amount">£200.00</p>
+    </div>
+  </label>
+
+    </div>
+  </div>
+  
+<hr class="govuk-section-break govuk-section-break--visible">
+
+<div class="hsbc-inset">
+  <div class="hsbc-inset__line"></div>
+  <h2 class="hsbc-h2">Confirm your authority</h2>
+</div>
+
+<div class="hsbc-grey-box">
+  <p class="hsbc-body">By clicking 'Confirm', you authorise HSBC to share the following information with TrueLayer Limited.</p>
+  <p class="hsbc-body"><b>Account details</b></p>
+  <ul>
+    <li class="hsbc-body">Your account name, number and sort-code</li>
+    <li class="hsbc-body">Your account balance</li>
+  </ul>
+
+  <p class="hsbc-body"><b>Regular payments</b></p>
+  <ul>
+    <li class="hsbc-body">Details of Payee agreements your have set up</li>
+    <li class="hsbc-body">Details of your standing orders</li>
+    <li class="hsbc-body">Your Direct Debits</li>
+  </ul>
+
+  <p class="hsbc-body"><b>Account transactions</b></p>
+  <ul>
+    <li class="hsbc-body">Your incoming transactions</li>
+    <li class="hsbc-body">Your outgoing transactions</li>
+    <li class="hsbc-body">Details of your incoming transactions</li>
+    <li class="hsbc-body">Details of your outgoing transactions</li>
+  </ul>
+
+  <p class="hsbc-body"><b>Account features and benefits</b></p>
+  <ul>
+    <li class="hsbc-body">The type of account you have</li>
+    <li class="hsbc-body">The fees, charges and interest you pay</li>
+    <li class="hsbc-body govuk-!-margin-bottom-6">The benefits, services, rewards and interest your account offers</li>
+  </ul>
+
+  <div class="hsbc-flex-container">
+    <p class="hsbc-body"><b>Start date:</b></p>
+    <p class="hsbc-body hsbc-flex-item">Today</p>
+  </div>
+  
+  
+
+<div class="hsbc-flex-container">
+  <p class="hsbc-body"><b>End date:</b></p>
+  <p class="hsbc-body hsbc-flex-item">20 January 2024</p>
+</div>
+
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--visible">
+
+<p class="hsbc-body-1">You can tell us to stop sharing information to this organisation in the Open Banking section of your Online Banking.</p>
+
+<a class="hsbc-cancel-link" href="#">Cancel</a>
+  <button class="hsbc-button" data-module="hsbc-button" onclick="window.location.href = '/hsbc/consent-04.html';">
+    Confirm
+  </button>
+
+</body>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+
+<footer class="hsbc-footer">
+  <div class="hsbc-footer__container">
+    <nav class="hsbc-footer__navigation" aria-label="Footer">
+      <ul class="hsbc-footer__list">
+    </nav>
+  </div>
+</footer>
+
+
+{% endblock %}
+
