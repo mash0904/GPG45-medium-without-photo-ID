@@ -1,10 +1,8 @@
 {% extends "govuk-prototype-kit/layouts/unbranded.html" %}
 
 {% block pageTitle %}
-  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+HSBC
 {% endblock %}
-
-
 {% block header %}
 
 <header class="hsbc-header" role="banner">
@@ -33,29 +31,18 @@
 
 <body class="hsbc-page">
 
-  <h1 class="hsbc-h1">You're connecting to HSBC</h1>
+  <h1 class="hsbc-h1">Information sharing authorised</h1>
 
-  <p class="hsbc-body govuk-!-margin-bottom-6">Please select personal or business banking.</p>
+  <p class="hsbc-body">You’ve successfully authorised us to share information with TrueLayer Limited.</p>
 
-  <button class="hsbc-button hsbc-button--special" data-module="hsbc-button" onclick="window.location.href = '/hsbc/consent-02.html';">
-    Personal
-</button>
+  <p class="hsbc-body govuk-!-margin-bottom-6">You’re now logged off from Open Banking and you’ll need to return to the third party.</p>
 
+  <button class="hsbc-button" data-module="hsbc-button" onclick="window.location.href = '/initiatives/no-photo-id/index';">
+    Return to third party
+  </button>
 
-<button class="hsbc-button hsbc-button--special" data-module="hsbc-button"onclick="window.location.href = '/hsbc/consent-02.html';">
-    Business
-</button>
-
-<button class="hsbc-button-white" data-module="hsbc-button" style="display: block;">
-    Cancel
-</button>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break">
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break">
-
-  
-  
 
 
 </body>

@@ -1,0 +1,102 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+ Truelayer - Choose Bank
+{% endblock %}
+
+
+{% block header %}
+
+<header class="truelayer-header" role="banner">
+  <div class="truelayer-header__container">
+      <!-- Truelayer logo placeholder -->
+      <div class="truelayer-header__logo">
+          <a href="#" class="truelayer-header__link">
+              <span class="truelayer-header__logotype">
+                  <!-- Replace this with your Truelayer logo image or SVG -->
+                  <img src="/public/images/TrueLayer.svg" alt="Truelayer Logo" class="truelayer-logo">
+              </span>
+          </a>
+      </div>
+  </div>
+</header>
+
+
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+<body class="hsbc-page">
+
+  <h1 class="truelayer-h1">Connect your account(s)</h1>
+
+  <div class="truelayer-page">
+  
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+  <p class="truelayer-body govuk-!-margin-bottom-6">For you to use this service, GOV.UK One Login needs your permission to read:</p>
+
+  <ul >
+    <li>
+       Your personal information
+    </li>
+    <li>
+     Your account(s)
+    </li>
+    <li>
+      Your transactions
+    </li>
+    <li>
+     Your balance
+    </li>
+    <li>
+     Your card(s)
+    </li>
+  </ul>
+
+  <p class="truelayer-body govuk-!-margin-top-6">If we support your account provider, we will transfer you securely to your bank to authenticate this connection.</p>
+
+
+  <a class="truelayer-cancel-link" href="#">Cancel</a>
+  <button class="truelayer-button govuk-!-margin-top-6" data-module="truelayer-button" onclick="window.location.href = '/initiatives/no-photo-id/v1/truelayer-02';">
+    Continue
+  </button>
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+     
+    </div>
+  </div>
+</footer>
+{% endblock %}
+

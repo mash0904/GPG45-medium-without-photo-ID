@@ -1,0 +1,110 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+ Truelayer - Choose Bank
+{% endblock %}
+
+
+{% block header %}
+
+<header class="truelayer-header" role="banner">
+  <div class="truelayer-header__container">
+      <!-- Truelayer logo placeholder -->
+      <div class="truelayer-header__logo">
+          <a href="#" class="truelayer-header__link">
+              <span class="truelayer-header__logotype">
+                  <!-- Replace this with your Truelayer logo image or SVG -->
+                  <img src="/public/images/TrueLayer.svg" alt="Truelayer Logo" class="truelayer-logo">
+              </span>
+          </a>
+      </div>
+  </div>
+</header>
+
+
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+<body class="hsbc-page">
+
+  <h1 class="truelayer-h1">Choose your bank</h1>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+  <div class="search-container">
+    <input type="text" placeholder="Search...">
+    <span class="search-icon"><i class="fa fa-search"></i></span>
+  </div>
+  
+  <div class="bank-cards-container">
+    <div class="bank-card" tabindex="0">
+      <a href="/initiatives/no-photo-id/v1/hsbc-01">
+        <img src="/public/images/hsbc-logo.svg" alt="Bank 1">
+      </a>
+    </div>
+    <div class="bank-card" tabindex="0">
+      <a href="">
+        <img src="/public/images/lloyds.svg" alt="Bank 2">
+      </a>
+    </div>
+    <div class="bank-card" tabindex="0">
+      <a href="">
+        <img src="/public/images/barclays.svg" alt="Bank 3">
+      </a>
+    </div>
+    <div class="bank-card" tabindex="0">
+      <a href="">
+        <img src="/public/images/Santander.svg" alt="Bank 4">
+      </a>
+    </div>
+    <div class="bank-card" tabindex="0">
+      <a href="">
+        <img src="/public/images/halifax.svg" alt="Bank 3">
+      </a>
+    </div>
+    <div class="bank-card" tabindex="0">
+      <a href="">
+        <img src="/public/images/nationwide.svg" alt="Bank 4">
+      </a>
+    </div>
+  </div>
+
+
+
+  <a href="#" class="custom-link">Cancel and go back to GOV.UK One Login</a>
+
+
+
+
+
+</body>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+     
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
